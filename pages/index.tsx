@@ -40,35 +40,35 @@ export default function Home() {
 
             <div className="bg-white w-full h-0.5 my-6"/>
 
-            <section className='w-full grid grid-cols-1 sm:grid-cols-3 gap-6 my-5'>
-                <Link href="/work">
-                    <div className='flex justify-between rounded-lg border-2 border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>
-                        <p>
-                            Check Out My Works
-                        </p>
-                        <ArrowBigRightDash/>
-                    </div>
-                </Link>
+            {/*<section className='w-full grid grid-cols-1 sm:grid-cols-3 gap-6 my-5'>*/}
+            {/*    <Link href="/work">*/}
+            {/*        <div className='flex justify-between rounded-lg border-2 border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
+            {/*            <p>*/}
+            {/*                Check Out My Works*/}
+            {/*            </p>*/}
+            {/*            <ArrowBigRightDash/>*/}
+            {/*        </div>*/}
+            {/*    </Link>*/}
 
-                <Link target={'_blank'} href="https://drive.google.com/file/d/1SxgMah7V_qJbdlbo62gqUe1hCVNQEfJP/view?usp=sharing">
-                    <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>
-                        <p>
-                            View / Download My Resume
-                        </p>
-                        <ArrowBigRightDash/>
-                    </div>
-                </Link>
+            {/*    <Link target={'_blank'} href="https://drive.google.com/file/d/1SxgMah7V_qJbdlbo62gqUe1hCVNQEfJP/view?usp=sharing">*/}
+            {/*        <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
+            {/*            <p>*/}
+            {/*                View / Download My Resume*/}
+            {/*            </p>*/}
+            {/*            <ArrowBigRightDash/>*/}
+            {/*        </div>*/}
+            {/*    </Link>*/}
 
-                <Link href="/contact">
-                    <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>
-                        <p>
-                            Get In Touch
-                        </p>
-                        <ArrowBigRightDash/>
-                    </div>
-                </Link>
+            {/*    <Link href="/contact">*/}
+            {/*        <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
+            {/*            <p>*/}
+            {/*                Get In Touch*/}
+            {/*            </p>*/}
+            {/*            <ArrowBigRightDash/>*/}
+            {/*        </div>*/}
+            {/*    </Link>*/}
 
-            </section>
+            {/*</section>*/}
         </>
     )
 }
