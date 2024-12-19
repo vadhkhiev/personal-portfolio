@@ -39,4 +39,4 @@ export default function Header() {
     )
 }
 
-{/*use this instead of rounded-full cause it will cause UI bug*/}
+{/*use this instead of rounded-full because it will cause UI bug*/}
