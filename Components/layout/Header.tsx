@@ -1,6 +1,5 @@
 import {motion} from "framer-motion";
 import Link from "next/link";
-import "@/styles/header.css";
 import {usePathname} from "next/navigation";
 
 export default function Header() {
