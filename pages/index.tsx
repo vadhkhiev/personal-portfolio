@@ -1,6 +1,6 @@
 import {Montserrat} from "next/font/google";
 import Link from "next/link";
-import {ArrowBigRightDash} from "lucide-react";
+// import {ArrowBigRightDash} from "lucide-react";
 import TechSkills from "@/Components/module/homepage/components/TechSkills";
 
 
