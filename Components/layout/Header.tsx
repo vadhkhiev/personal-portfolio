@@ -8,7 +8,7 @@ export default function Header() {
         {path: '/', label: 'Vivadh'},
         {path: '/work', label: 'Work'},
         {path: 'https://drive.google.com/file/d/1SxgMah7V_qJbdlbo62gqUe1hCVNQEfJP/view?usp=sharing', label: 'Resume'},
-        {path: '/contact', label: 'Contact'},
+        // {path: '/contact', label: 'Contact'},
     ]
 
     const pathname = usePathname();

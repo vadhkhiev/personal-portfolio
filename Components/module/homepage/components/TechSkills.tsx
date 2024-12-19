@@ -1,20 +1,22 @@
-import Image from "next/image";
-import {imgAssetUrl} from "@/Components/globalHelper/assetsHelper";
-
+import Image, {StaticImageData} from "next/image";
+import bootstrapIcon from "@/Components/assets/image/bootstrap-icon.png";
+import nextjsIcon from "@/Components/assets/image/nextjs-icon.png";
+import tailwindcssIcon from "@/Components/assets/image/tailwindcss-icon.png";
+import reactIcon from "@/Components/assets/image/react-icon.png";
 
 type ModelTechSkillIcons = {
     label: string,
-    icon: string,
+    icon: StaticImageData,
 }
 
 export default function TechSkills() {
 
     const tech_skills_icons: ModelTechSkillIcons[] = [
-        {label: 'ReactJS', icon: imgAssetUrl('react-icon.png')},
-        {label: 'NextJS', icon: imgAssetUrl('nextjs-icon.png')},
-        {label: 'Bootstrap', icon: imgAssetUrl('bootstrap-icon.png')},
+        {label: 'ReactJS', icon: reactIcon},
+        {label: 'NextJS', icon: nextjsIcon},
+        {label: 'Bootstrap', icon: bootstrapIcon},
         // {label: 'Redux', icon: imgAssetUrl('redux-icon.png')},
-        {label: 'TailwindCSS', icon: imgAssetUrl('tailwindcss-icon.png')},
+        {label: 'TailwindCSS', icon: tailwindcssIcon},
     ]
 
     return (
