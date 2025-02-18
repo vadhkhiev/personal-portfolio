@@ -1,7 +1,7 @@
 import {Montserrat} from "next/font/google";
-import Link from "next/link";
-// import {ArrowBigRightDash} from "lucide-react";
 import TechSkills from "@/Components/module/homepage/components/TechSkills";
+import {Button} from "@/Components/ui/button";
+import Link from "next/link";
 
 
 const monserrat = Montserrat({subsets: ['latin']});
@@ -10,65 +10,34 @@ const monserrat = Montserrat({subsets: ['latin']});
 export default function Home() {
     return (
         <>
-            <header className={`mt-12 font-bold ${monserrat.className}`}>
+            <header className={`my-12 font-bold text-center ${monserrat.className}`}>
                 <p className='text-5xl'>KHIEV VIVADH</p>
-                <br/>
-                <p className='text-2xl w-full'>IS A FRONTEND WEB DEVELOPER</p>
+                <p className='text-2xl w-full h-4'>FRONTEND WEB DEVELOPER</p>
             </header>
 
-            <section className='mt-5'>
-                <header className='text-center'>LANGUAGE - SKILLS - TECHNOLOGY</header>
+            <section className='my-5'>
+                <header className={`text-center ${monserrat.className} font-semibold`}>SKILLS</header>
                 <TechSkills/>
             </section>
 
-            <div className="bg-white w-full h-0.5 my-6"/>
 
-            <section className='mt-5 flex flex-wrap justify-center'>
-                <div className={`text-3xl sm:flex-1 pb-5 font-bold ${monserrat.className}`}>
-                    WHO AM I?
-                </div>
-                <div className='sm:flex-1 text-xl text-justify sm:leading-8'>
-                    Greeting visitors, I am Khiev Vivadh. A Senior Computer Science Student and also working as a Frontend Web
-                    Developer at
-                    <Link className='text-blue-400' href={'https://kiloit.org/'} target={'_blank'}> KiloIT</Link>.
-                    I have experienced using tools and technologies such as ReactJS, NextJS, Bootstrap, TailwindCSS, React
-                    Router, Redux. I have started my Frontend journey back in late 2022 learning the basic of creating a
-                    website working
-                    my way from an intern to a Junior Dev. and I have no plan of slowing down.
-                </div>
-            </section>
+            <div className={`text-3xl pb-5 font-bold text-center ${monserrat.className}`}>
+                WHO AM I?
+            </div>
+            <div className='text-xl sm:leading-8 text-center flex justify-center'>
+                <p className='sm:w-1/2'>
+                    Hi, I'm Khiev Vivadh!
+                    I'm a Senior Computer Science student and a Frontend Developer at KiloIT. With experience in
+                    ReactJS, NextJS, Redux, TailwindCSS, Bootstrap, and React Router, I began my journey in late
+                    2022—growing from an intern to a Junior Developer. And I'm just getting started!
+                </p>
+            </div>
 
-            <div className="bg-white w-full h-0.5 my-6"/>
-
-            {/*<section className='w-full grid grid-cols-1 sm:grid-cols-3 gap-6 my-5'>*/}
-            {/*    <Link href="/work">*/}
-            {/*        <div className='flex justify-between rounded-lg border-2 border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
-            {/*            <p>*/}
-            {/*                Check Out My Works*/}
-            {/*            </p>*/}
-            {/*            <ArrowBigRightDash/>*/}
-            {/*        </div>*/}
-            {/*    </Link>*/}
-
-            {/*    <Link target={'_blank'} href="https://drive.google.com/file/d/1SxgMah7V_qJbdlbo62gqUe1hCVNQEfJP/view?usp=sharing">*/}
-            {/*        <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
-            {/*            <p>*/}
-            {/*                View / Download My Resume*/}
-            {/*            </p>*/}
-            {/*            <ArrowBigRightDash/>*/}
-            {/*        </div>*/}
-            {/*    </Link>*/}
-
-            {/*    <Link href="/contact">*/}
-            {/*        <div className='flex justify-between border-2 rounded-lg border-slate-200 p-2 px-4 hover:bg-white hover:text-black hover:font-semibold transition-colors duration-100'>*/}
-            {/*            <p>*/}
-            {/*                Get In Touch*/}
-            {/*            </p>*/}
-            {/*            <ArrowBigRightDash/>*/}
-            {/*        </div>*/}
-            {/*    </Link>*/}
-
-            {/*</section>*/}
+            <div className='flex justify-center mt-5'>
+                <Link href={'/work'}>
+                    <Button className='bg-transparent hover:bg-blue-300 hover:text-gray-800 duration-200 rounded-xl'>Check out my work</Button>
+                </Link>
+            </div>
         </>
     )
 }
