@@ -26,16 +26,16 @@ export default function Home() {
             </div>
             <div className='text-xl sm:leading-8 text-center flex justify-center'>
                 <p className='sm:w-1/2'>
-                    Hi, I'm Khiev Vivadh!
-                    I'm a Senior Computer Science student and a Frontend Developer at KiloIT. With experience in
+                    I am a Frontend Developer at KiloIT. With experience in
                     ReactJS, NextJS, Redux, TailwindCSS, Bootstrap, and React Router, I began my journey in late
-                    2022—growing from an intern to a Junior Developer. And I'm just getting started!
+                    2022—growing from an intern to a Junior Developer. And I am just getting started!
                 </p>
             </div>
 
             <div className='flex justify-center mt-5'>
                 <Link href={'/work'}>
-                    <Button className='bg-transparent hover:bg-blue-300 hover:text-gray-800 duration-200 rounded-xl'>Check out my work</Button>
+                    <Button className='bg-transparent hover:bg-blue-300 hover:text-gray-800 duration-200 rounded-xl'>Check
+                        out my work</Button>
                 </Link>
             </div>
         </>
